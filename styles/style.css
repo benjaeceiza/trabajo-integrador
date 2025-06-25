@@ -6,15 +6,27 @@
 
 /* ---- HEADER ---- */
 
-.header {
-    padding: 15px 100px;
+
+.promocion-container {
+    background-color: black;
 }
+
+.promocion {
+    color: white;
+    padding: 10px 0px;
+    text-align: center;
+    font-family: "regular";
+    font-weight: 600;
+    font-size: 13px;
+}
+
 
 .header__nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 10px 100px;
 }
 
 .header__logo {
@@ -59,8 +71,10 @@
     width: 150px;
     text-align: center;
     font-size: 12px;
+}
 
-
+.icono-lupa {
+    display: none;
 }
 
 .header__icon {
@@ -76,7 +90,11 @@
 
 .banner-desktop {
     width: 100%;
+}
 
+
+.banner-mob {
+    display: none;
 }
 
 /* CONTENEDOR SECTIONS */
@@ -108,7 +126,7 @@
 
 }
 
-.name-product{
+.name-product {
     font-family: "regular";
     font-weight: 500;
 }
@@ -127,10 +145,10 @@
 
 }
 
-.container-img-name p{
+.container-img-name p {
     text-align: start;
     font-size: small;
-     font-weight: 600;
+    font-weight: 600;
     font-family: "regular";
     padding: 2px 0px;
 
@@ -190,7 +208,7 @@
     margin-bottom: 50px;
 }
 
-.banner-run-mob{
+.banner-run-mob {
     display: none;
 }
 
@@ -246,10 +264,65 @@
     border-radius: 50px;
 }
 
+/* ---- KIDS ----- */
+
+.container-banner {
+    max-width: 1200px;
+    margin: auto;
+
+}
+
+.banner {
+    width: 100%;
+}
+
+.products-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card-link {
+    text-decoration: none;
+    color: black;
+    max-width: 400px;
+
+}
+
+.product-card {
+    margin: 10px;
+}
+
+.card-img {
+    width: 100%;
+}
+
+.product-name {
+    font-family: "regular";
+    font-weight: 600;
+    margin: 10px 0px 20px 0px;
+}
+
+.product-short-description {
+    font-family: "regular";
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    font-weight: bold;
+}
+
+
+
+
+
 /* ---- FOOTER ---- */
 
 .footer {
-    margin-top: 120px;
+    margin-top: 80px;
+    padding-top: 50px;
+    background-color: black;
 }
 
 .help-media-section {
@@ -267,6 +340,7 @@
     font-family: "just";
     margin: 10px 0px;
     width: 200px;
+    color: white;
 }
 
 .links-list {
@@ -275,7 +349,7 @@
 
 .footer-link {
     text-decoration: none;
-    color: black;
+    color: rgb(167, 167, 167);
     font-size: small;
 }
 
@@ -310,6 +384,7 @@
 .location-container {
     display: flex;
     align-items: flex-end;
+    color: white;
 }
 
 .icon-location {
@@ -318,17 +393,20 @@
 
 .copy-text {
     margin-left: 10px;
+    color: white;
 }
 
 .conditions-article {
     display: flex;
     align-items: center;
+
 }
 
 .conditions-article p {
     font-size: small;
     margin: 0px 5px;
     cursor: pointer;
+    color: white;
 }
 
 /* ---- FUENTES ---- */
@@ -342,6 +420,7 @@
     font-family: "just";
     src: url("../assets/fuentes/klein.condensed-trial-extrabold.ttf");
 }
+
 @font-face {
     font-family: "regular";
     src: url("../assets/fuentes/HelveticaNeueRoman.otf");
@@ -349,29 +428,101 @@
 
 /*---- MEDIA QUERYS ----*/
 
-@media (max-width:900px) {
-     .article-thumbnails-container{
-        display: none;
-     }
-
-     .img-container{
-         width: 95%;
-        margin: auto;
-
-     }
-     .article-img{
-      width: 100%;    
-     }
-}
-
-@media (max-width:700px) {
-    .banner-run{
+@media (max-width:970px) {
+    .header__input {
         display: none;
     }
 
-    .banner-run-mob{
+    .icono-lupa {
+        display: block;
+        width: 24px;
+    }
+}
+
+@media (max-width:900px) {
+    .header__nav {
+        padding: 10px
+    }
+
+    .article-thumbnails-container {
+        display: none;
+    }
+
+    .img-container {
+        width: 95%;
+        margin: auto;
+
+    }
+
+    .article-img {
+        width: 100%;
+    }
+
+
+}
+
+@media (max-width:800px) {
+    .card-link {
+        margin: auto;
+    }
+}
+
+
+@media (max-width:700px) {
+    .banner-desktop {
+        display: none;
+    }
+
+    .banner {
+        display: none;
+    }
+
+    .banner-mob {
+        display: block;
+        width: 100%;
+    }
+
+    .title {
+        padding-left: 20px;
+    }
+
+    .banner-run {
+        display: none;
+    }
+
+    .banner-run-mob {
         width: 95%;
         display: block;
         margin-bottom: 50px;
     }
+
+    .header__logo {
+        width: 50px;
+    }
+
+    .header__list {
+        width: auto;
+    }
+
+    .copy-section p{
+        font-size: 10px;
+    }
+
+}
+
+@media (max-width:400px) {
+    .help-media-section {
+        justify-content: start;
+    }
+
+    .subtitle-footer {
+        text-align: start;
+        padding-left: 10px;
+    }
+
+    .links-list {
+        display: none;
+    }
+
+    
 }
