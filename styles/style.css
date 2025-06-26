@@ -313,7 +313,208 @@
     font-weight: bold;
 }
 
+/*---- PRODUCT DETAIL ---- */
+.go-back {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
 
+.go-back a {
+    text-decoration: none;
+    color: black;
+    margin-right: 5px;
+    font-family: "regular";
+}
+
+.go-back a:hover {
+    color: gray;
+    transition: all .3s;
+}
+
+.go-back p {
+    font-family: "regular";
+}
+
+.product-detail-section {
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 100px;
+    height: 70vh;
+
+}
+
+.product-detail-section-mob {
+    display: none;
+}
+
+.thumbnails-detail-container {
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+}
+
+.thumbnail-detail {
+    width: 70px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.img-focus {
+    width: 50%;
+    min-width: 300px;
+}
+
+.img-product {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+
+}
+
+.description-container {
+    width: 25%;
+    padding-left: 20px;
+    min-width: 250px;
+}
+
+.title-detail {
+    font-family: "regular";
+}
+
+.detail-price {
+    font-weight: bolder;
+    font-family: "regular";
+    font-size: 15px;
+    padding: 5px 0px;
+}
+
+.detail-cuotas {
+    font-family: "regular";
+}
+
+.sizes-section {
+    margin: 20px 0px;
+}
+
+.size-text {
+    font-family: "regular";
+    font-size: small;
+    font-weight: 600;
+}
+
+.sizes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+
+}
+
+.size {
+    width: 60px;
+    border: solid 1px rgb(173, 173, 173);
+    text-align: center;
+    padding: 10px 0px;
+    margin: 5px;
+    font-family: "regular";
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.add-cart {
+    width: 100%;
+    height: 40px;
+    border-radius: 50px;
+    border: solid 2px black;
+    font-family: "regular";
+    font-weight: 600;
+    font-size: 15px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+
+}
+
+.add-cart:hover {
+    background-color: white;
+    color: black;
+    transition: all .3s;
+}
+
+
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* ---- CART ---- */
+
+.seccion-datos-personales{
+    width: 50%;
+}
+
+.titulo-formulario{
+    display: flex;
+    align-items: center;
+    margin: 30px 0px;
+}
+
+.titulo-formulario p{
+    padding: 5px 10px;
+   border: solid 1px black;
+   text-align: center;
+   border-radius: 50px;
+   font-size: small;
+   font-family: bolder;
+   font-family: "regular";
+}
+
+.titulo-formulario h2 {
+    font-family: "regular";
+    margin-left: 10px;
+}
+
+.contenedor-inputs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.input-formulario{
+    width: 40%;
+    margin: 10px;
+    height: 40px;
+    padding-left: 10px;
+    font-weight: bolder;
+    border-radius: 5px;
+    font-family: "regular";
+}
+
+.email{
+    width: 100%;
+}
+
+.contenedor-boton{
+    text-align: center;
+}
+
+.boton-formulario{
+    width: 40%;
+    min-width: 200px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: black;
+    color: white;
+    font-family: "Regular";
+    font-size: 14px;
+    margin: 20px 0px ;
+}
 
 
 
@@ -467,6 +668,53 @@
     }
 }
 
+@media (max-width:720px) {
+
+    .go-back {
+        padding-left: 20px;
+    }
+
+    .product-detail-section {
+        display: none;
+    }
+
+    .product-detail-section-mob {
+        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 30px 0px;
+
+    }
+
+    .img-focus-mob {
+        width: 95%;
+    }
+
+    .img-product-mob {
+        width: 100%;
+    }
+
+    .thumbnails-detail-container-mob {
+        text-align: center;
+    }
+
+    .thumbnail-detail-mob {
+        width: 20%;
+
+    }
+
+    .sizes-section-mob {
+        margin: 20px 0px;
+    }
+
+    .subtitle-detail {
+      text-align: center;
+    }
+
+}
+
+
 
 @media (max-width:700px) {
     .banner-desktop {
@@ -504,7 +752,7 @@
         width: auto;
     }
 
-    .copy-section p{
+    .copy-section p {
         font-size: 10px;
     }
 
@@ -524,5 +772,5 @@
         display: none;
     }
 
-    
+
 }
