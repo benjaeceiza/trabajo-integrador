@@ -82,6 +82,21 @@
     margin-left: 10px;
 }
 
+.cart-link{
+    display: flex;
+    align-items: start;
+    text-decoration: none;
+    font-size: x-small;
+    color: white;
+}
+
+.cart-link p{
+    background-color: red;
+    padding: 1px 3px;
+    border-radius: 50px;
+
+}
+
 /* ---- INDEX ---- */
 
 
@@ -454,24 +469,34 @@
 
 /* ---- CART ---- */
 
-.seccion-datos-personales{
-    width: 50%;
+.section-container-cart {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
 }
 
-.titulo-formulario{
+.seccion-datos-personales {
+    width: 50%;
+    min-width: 400px;
+}
+
+.titulo-formulario {
     display: flex;
     align-items: center;
     margin: 30px 0px;
 }
 
-.titulo-formulario p{
+.titulo-formulario p {
     padding: 5px 10px;
-   border: solid 1px black;
-   text-align: center;
-   border-radius: 50px;
-   font-size: small;
-   font-family: bolder;
-   font-family: "regular";
+    border: solid 1px black;
+    text-align: center;
+    border-radius: 50px;
+    font-size: small;
+    font-family: bolder;
+    font-family: "regular";
 }
 
 .titulo-formulario h2 {
@@ -479,32 +504,33 @@
     margin-left: 10px;
 }
 
-.contenedor-inputs{
+.contenedor-inputs {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    
+
 }
 
-.input-formulario{
-    width: 40%;
+.input-formulario {
+    width: 44%;
     margin: 10px;
     height: 40px;
     padding-left: 10px;
     font-weight: bolder;
     border-radius: 5px;
     font-family: "regular";
+    border: gray solid 1px;
 }
 
-.email{
+.email {
     width: 100%;
 }
 
-.contenedor-boton{
+.contenedor-boton {
     text-align: center;
 }
 
-.boton-formulario{
+.boton-formulario {
     width: 40%;
     min-width: 200px;
     height: 40px;
@@ -513,9 +539,99 @@
     color: white;
     font-family: "Regular";
     font-size: 14px;
-    margin: 20px 0px ;
+    margin: 20px 0px;
 }
 
+.boton-formulario:hover {
+    background-color: white;
+    color: black;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.seccion-resumen-compra {
+    width: 45%;
+    padding-left: 50px;
+    min-width: 400px;
+}
+
+.title-resumen-compra {
+    width: 100%;
+    text-align: center;
+    margin: 30px 0px;
+    border-bottom: 1px solid gray;
+    font-family: "nike";
+    padding-bottom: 10px;
+}
+
+.contenedor-producto {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+}
+
+.product p {
+    font-family: "regular";
+    font-size: small;
+}
+
+.resumen-price {
+    font-family: "regular";
+    font-weight: bold;
+    font-size: small;
+}
+
+
+.img-resumen-product {
+    width: 100px;
+}
+
+.contenedor-descuento {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    border-bottom: 1px solid gray;
+}
+
+.icono-descuento {
+    width: 50px;
+    margin-right: 20px;
+}
+
+.contenedor-descuento p {
+    font-size: small;
+}
+
+.contenedor-precios {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.subtotal {
+    font-family: "regular";
+    color: gray;
+}
+
+.precio-subtotal {
+    font-family: "regular";
+    color: gray;
+    font-size: small;
+}
+
+.total {
+    font-family: "regular";
+    font-weight: bold;
+    font-size: large;
+
+}
 
 
 /* ---- FOOTER ---- */
@@ -629,6 +745,14 @@
 
 /*---- MEDIA QUERYS ----*/
 
+@media (max-width:1070px) {
+    .input-formulario {
+        width: 100%;
+
+    }
+
+}
+
 @media (max-width:970px) {
     .header__input {
         display: none;
@@ -709,7 +833,7 @@
     }
 
     .subtitle-detail {
-      text-align: center;
+        text-align: center;
     }
 
 }

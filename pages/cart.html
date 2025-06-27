@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/icons/pipa-nike.png" type="image/x-icon">
     <link rel="stylesheet" href="../styles/style.css">
     <title>Document</title>
 </head>
@@ -36,7 +37,7 @@
     </header>
     <!-- MAIN -->
     <main>
-        <div class="section-container">
+        <div class="section-container-cart">
             <section class="seccion-datos-personales">
                 <article class="formulario">
                     <div class="titulo-formulario">
@@ -64,23 +65,102 @@
                 </div>
             </section>
             <section class="seccion-resumen-compra">
-                <h2 class="title-resumen-compra"></h2>
-                <article>
+                <h2 class="title-resumen-compra">Resumen de compra</h2>
+                <article class="resumen-compra">
                     <div class="contenedor-producto">
                         <div class="product">
-                            <img src="" alt="">
-                            <p>name</p>
+                            <img class="img-resumen-product" src="../assets/hombre/jordan.webp" alt="Zapatillas jordan">
+                            <p>Air Jordan 1 Mid SE</p>
                         </div>
-                        <p>precio</p>
+                        <p class="resumen-price">$249.999</p>
                     </div>
                     <div class="contenedor-descuento">
-                       <img src="" alt="">
-                       <p>Ingrese su cupon de descuento aqui</p>
+                        <img class="icono-descuento" src="../assets/icons/cupon.png" alt="Cupon descuento">
+                        <p>Ingresá tu código de descuento aqui</p>
+                    </div>
+                    <div class="contenedor-total">
+                        <div class="contenedor-precios">
+                            <p class="subtotal">Subtotal</p>
+                            <p class="precio-subtotal">$ 249.999</p>
+                        </div>
+                        <div class="contenedor-precios">
+                            <p class="subtotal">Impuestos nacionales</p>
+                            <p class="precio-subtotal">$ 50.000</p>
+                        </div>
+                        <div class="contenedor-precios">
+                            <p class="total">Total</p>
+                            <p class="total">$ 299.999</p>
+                        </div>
                     </div>
                 </article>
             </section>
         </div>
     </main>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <!-- SECCION DE AYUDA Y REDES SOCIALES -->
+        <section class="help-media-section">
+            <!-- ARTICULO DE TIENDA -->
+            <article class="links-article">
+                <h3 class="subtitle-footer">IR A TIENDA</h3>
+            </article>
+            <!-- ARTICULO DE AYUDA -->
+            <article class="links-article">
+                <h3 class="subtitle-footer">AYUDA</h3>
+                <!-- LISTA DE LINKS -->
+                <ul class="links-list">
+                    <li class="item-link"><a class="footer-link" href="#">Envíos y entregas</a></li>
+                    <li class="item-link"><a class="footer-link" href="#">Devoluciones</a></li>
+                    <li class="item-link"><a class="footer-link" href="#">Cambios</a></li>
+                    <li class="item-link"><a class="footer-link" href="#">Opciones de pago</a></li>
+                    <li class="item-link"><a class="footer-link" href="#">Contacto</a></li>
+                    <li class="item-link"><a class="footer-link" href="#">Defensa al consumidor</a></li>
+                    <li class="item-link"><a class="footer-link" href="#">Libro de quejas</a></li>
+                </ul>
+            </article>
+            <!-- ARTICULO DE NOVEDADES -->
+            <article class="links-article">
+                <h3 class="subtitle-footer">NOVEDADES DE NIKE</h3>
+                <!-- LISTA DE LINKS -->
+                <ul class="links-list">
+                    <li class="item-link"><a class="footer-link" href="#">Encontrá tu calzado</a></li>
+                    <li class="item-link"><a class="footer-link" href="#">¿Como elegir tu top?</a></li>
+                    <li class="item-link"><a class="footer-link" href="#">Tips saludables</a></li>
+                    <li class="item-link"><a class="footer-link" href="#">Promociones</a></li>
+                    <li class="item-link"><a class="footer-link" href="#">¿Como sigo mi envío?</a></li>
+                </ul>
+            </article>
+            <!-- ARTICULO DE REDES SOCIALES -->
+            <article class="links-article">
+                <h3 class="subtitle-footer">REDES SOCIALES</h3>
+                <!-- LISTA DE REDES SOCIALES -->
+                <ul class="social-list">
+                    <li class="item-icon-social"><a href="#"><img src="../assets/footer/facebook.png" alt="Facebook"
+                                class="icon-media"></a></li>
+                    <li class="item-icon-social"><a href="#"><img src="../assets/footer/instagram.png" alt="Instagram"
+                                class="icon-media"></a></li>
+                    <li class="item-icon-social"><a href="#"><img src="../assets/footer/x.png" alt="X"
+                                class="icon-media"></a></li>
+                    <li class="item-icon-social"><a href="#"><img src="../assets/footer/youtube.png" alt="Youtube"
+                                class="icon-media"></a></li>
+                </ul>
+            </article>
+        </section>
+        <!-- SECCION DE COPYRIGHT -->
+        <section class="copy-section">
+            <article class="location-article">
+                <div class="location-container">
+                    <img class="icon-location" src="../assets/footer/ubicacion.png" alt="Location">
+                    <p>Argentina</p>
+                </div>
+                <p class="copy-text">&copy Southbay S.R.L Todos los derechos reservados</p>
+            </article>
+            <article class="conditions-article">
+                <p>Términos y condiciones</p>
+                <p> Política de Privacidad y Cookies</p>
+            </article>
+        </section>
+    </footer>
 </body>
 
 </html>
