@@ -751,6 +751,10 @@
 
     }
 
+    .seccion-resumen-compra{
+        padding: 0;
+    }
+
 }
 
 @media (max-width:970px) {
